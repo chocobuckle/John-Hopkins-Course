@@ -1,0 +1,117 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  margin: 0px 15px;
+}
+
+h1, h2 {
+  text-align: center;
+  color: black;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 500;
+  margin-top: 25px;
+  margin-bottom: 35px;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  right: 0px;
+  width: 33.33%;
+  padding: 3px 0px;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  overflow: auto;
+}
+
+section {
+  position: relative;
+  border: 1px solid black;
+  background-color: #999999;
+  margin: 0px 15px;
+}
+
+p {
+  font-weight: 400;
+  padding: 35px 15px 15px 15px;
+  color: black;
+}
+
+.row {
+  width: 100%;
+}
+
+.chicken {
+  background-color: #D59898;
+  color: black;
+}
+
+.beef {
+  background-color: #C14543;
+  color: white;
+}
+
+.sushi {
+  background-color: #E5D198;
+  color: black;
+}
+
+/*Desktop devices only*/
+@media screen and (min-width: 992px) {
+  .col-lg-4 {
+    width: 33.33%;
+    float: left;
+  }
+}
+
+/*Tablet devices only*/
+@media screen and (min-width:768px) and (max-width: 991px) {
+  .col-md-6 {
+    width: 50.00%;
+    float:left;
+  }
+
+  .col-md-12 {
+    width: 100%;
+  }
+}
+
+/*Padding and overflow adjustments for very small screens.
+Not part of the assignment, but I just thought I would experiment*/
+@media screen and (max-width: 276px) {
+  .p1 {
+    padding: 52px 15px 15px 15px;
+  }
+}
+
+@media screen and (max-width: 202px) {
+  .p2 {
+    padding: 52px 15px 15px 15px;
+  }
+}
+
+@media screen and (max-width: 227px) {
+  .p3 {
+    padding: 52px 15px 15px 15px;
+  }
+
+@media screen and (max-width: 182px) {
+  p {
+    overflow: auto;
+  }
+}
