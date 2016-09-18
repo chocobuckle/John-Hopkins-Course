@@ -81,6 +81,10 @@ p {
 
 /*Tablet devices only*/
 @media screen and (min-width:768px) and (max-width: 991px) {
+  h1 {
+    font-size: 32px;
+  }
+
   .col-md-6 {
     width: 50.00%;
     float:left;
@@ -91,27 +95,9 @@ p {
   }
 }
 
-/*Padding and overflow adjustments for very small screens.
-Not part of the assignment, but I just thought I would experiment*/
-@media screen and (max-width: 276px) {
-  .p1 {
-    padding: 52px 15px 15px 15px;
-  }
-}
-
-@media screen and (max-width: 202px) {
-  .p2 {
-    padding: 52px 15px 15px 15px;
-  }
-}
-
-@media screen and (max-width: 227px) {
-  .p3 {
-    padding: 52px 15px 15px 15px;
-  }
-
-@media screen and (max-width: 182px) {
-  p {
-    overflow: auto;
+/*Mobile devices only*/
+@media screen and (min-width:277px) and (max-width: 767px) {
+  h1 {
+    font-size: 34px;
   }
 }
