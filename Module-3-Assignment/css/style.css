@@ -1,8 +1,4 @@
-* {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
+*  {
     -webkit-margin-before: 0em;
     -webkit-margin-after: 0em;
     -webkit-margin-start: 0px;
@@ -12,92 +8,71 @@
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
-  margin: 0px 15px;
 }
 
-h1, h2 {
-  text-align: center;
+
+h2, h3 {
   color: black;
-}
-
-h1 {
-  font-size: 28px;
-  font-weight: 500;
-  margin-top: 25px;
-  margin-bottom: 35px;
-}
-
-h2 {
-  font-size: 20px;
-  font-weight: 400;
-  position: absolute;
-  right: 0px;
-  width: 33.33%;
-  padding: 3px 0px;
-  border-left: 1px solid black;
-  border-bottom: 1px solid black;
-  overflow: auto;
 }
 
 section {
-  position: relative;
   border: 1px solid black;
   background-color: #999999;
-  margin: 15px;
+  margin: 15px 0px;
 }
 
 p {
-  font-weight: 400;
-  padding: 35px 15px 15px 15px;
+  padding: 0px 15px;
   color: black;
 }
 
-.row {
+.back-to-top {
+  display: inline-block;
   width: 100%;
-}
-
-.chicken {
-  background-color: #D59898;
+  margin-bottom: 15px;
   color: black;
+  text-decoration: underline;
 }
 
-.beef {
-  background-color: #C14543;
-  color: white;
+.header-nav {
+  background-color: #999999;
+  border-bottom: 1px solid black;
+  border-radius: 0px;
 }
 
-.sushi {
-  background-color: #E5D198;
+.navbar-brand h1 {
+  margin: 0px;
   color: black;
+  line-height: .65
 }
 
-/*Desktop devices only*/
-@media screen and (min-width: 992px) {
-  .col-lg-4 {
-    width: 33.33%;
-    float: left;
-  }
+#nav-list a {
+  color: black;
+  font-size: 1.15em;
+  background-color: white;
 }
 
-/*Tablet devices only*/
-@media screen and (min-width:768px) and (max-width: 991px) {
-  h1 {
-    font-size: 32px;
-  }
-
-  .col-md-6 {
-    width: 50.00%;
-    float:left;
-  }
-
-  .col-md-12 {
-    width: 100%;
-  }
+#nav-list a:hover {
+  background: #ddd;
 }
 
-/*Mobile devices only*/
-@media screen and (min-width:277px) and (max-width: 767px) {
-  h1 {
-    font-size: 34px;
+.item1, .item2 {
+  border-bottom: 2px dotted black;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: black;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: black;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: black;
+}
+
+@media screen and (max-width: 767px) {
+  #collapsable-nav {
+    background-color: black;
   }
 }
